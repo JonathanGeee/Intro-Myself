@@ -69,6 +69,8 @@
   .reveal[data-delay="3"] { transition-delay: 0.30s; }
   .reveal[data-delay="4"] { transition-delay: 0.40s; }
   .reveal[data-delay="5"] { transition-delay: 0.50s; }
+  .reveal[data-delay="6"] { transition-delay: 0.60s; }
+  .reveal[data-delay="7"] { transition-delay: 0.70s; }
 
   /* 复古下划线标题装饰 */
   .eyebrow { letter-spacing: 0.28em; }
@@ -175,7 +177,7 @@
 
       <!-- slogan 待定区域 -->
       <p class="reveal mt-8 text-base md:text-xl text-ink/80 leading-relaxed max-w-md" data-delay="2">
-        在搜索、小程序、AI有一些经验，希望能在此开始新的学习
+        对产品创造充满热情，乐于研究各种AI产品
       </p>
 
       <!-- 黑底白字圆角按钮 -->
@@ -189,19 +191,19 @@
       <div class="reveal mt-12 grid grid-cols-2 gap-x-10 gap-y-6 max-w-md" data-delay="4">
         <div>
           <p class="font-mono text-xs eyebrow uppercase text-muted mb-1">FOCUS</p>
-          <p class="font-mono text-sm text-ink">交互 / 产品设计</p>
+          <p class="font-mono text-sm text-ink">交互 · 产品设计</p>
         </div>
         <div>
           <p class="font-mono text-xs eyebrow uppercase text-muted mb-1">DOMAIN</p>
-          <p class="font-mono text-sm text-ink">搜索 · IM · AI</p>
+          <p class="font-mono text-sm text-ink">小程序 · AI</p>
         </div>
         <div>
           <p class="font-mono text-xs eyebrow uppercase text-muted mb-1">EXPLORE</p>
-          <p class="font-mono text-sm text-ink">AI Agent 产品</p>
+          <p class="font-mono text-sm text-ink">实用的AI产品</p>
         </div>
         <div>
           <p class="font-mono text-xs eyebrow uppercase text-muted mb-1">HOBBY</p>
-          <p class="font-mono text-sm text-ink">画画 · 徒步 · 撸猫</p>
+          <p class="font-mono text-sm text-ink">独立开发 · 画画 · 徒步</p>
         </div>
       </div>
     </div>
@@ -288,41 +290,60 @@
 <!-- =================================================================== -->
 <section id="s2" class="relative z-10 min-h-screen w-full flex items-center px-8 md:px-20 py-20">
   <div class="max-w-[1280px] mx-auto w-full">
-    <div class="reveal flex items-end justify-between mb-12 pb-6">
+    <div class="reveal mb-12 pb-6">
       <h2 class="font-display text-4xl md:text-5xl font-bold italic">工作经历</h2>
-      <p class="font-mono text-xs md:text-sm eyebrow uppercase text-muted">Experience · 01 — 05</p>
     </div>
 
     <div class="flex flex-col md:flex-row gap-6 md:gap-4">
       <!-- 1 -->
-      <div class="reveal group flex-1 bg-panel border border-line rounded-2xl p-6 md:p-8 hover:-translate-y-2 transition-all duration-300 hover:shadow-lg flex flex-col h-[640px]" data-delay="1">
-        <span class="font-display text-5xl md:text-6xl font-bold text-line/30 mb-4 text-left">2018</span>
+      <div class="reveal group flex-1 bg-panel border border-line rounded-2xl p-6 md:p-8 hover:-translate-y-2 transition-transform duration-200 flex flex-col h-[640px]" data-delay="1">
+        <span class="font-display text-5xl md:text-6xl font-bold text-line/30 group-hover:text-ink/60 mb-4 text-left">2018</span>
+        <!-- Logo位置 -->
+        <div class="w-9 h-9 rounded-xl mb-4 flex items-center justify-center overflow-hidden bg-white">
+          <img src="images/logo_1.png" alt="Klook" class="w-full h-full object-contain">
+        </div>
         <h3 class="font-display text-xl md:text-2xl font-semibold mb-auto text-left">Klook</h3>
-        <p class="font-mono text-sm md:text-base text-muted text-left">UX Designer</p>
+        <p class="font-mono text-sm md:text-base text-muted text-left">交互设计</p>
       </div>
       <!-- 2 -->
-      <div class="reveal group flex-1 bg-panel border border-line rounded-2xl p-6 md:p-8 hover:-translate-y-2 transition-all duration-300 hover:shadow-lg flex flex-col h-[640px]" data-delay="2">
-        <span class="font-display text-5xl md:text-6xl font-bold text-line/30 mb-4 text-left">2020</span>
-        <h3 class="font-display text-xl md:text-2xl font-semibold mb-auto text-left">腾讯</h3>
-        <p class="font-mono text-sm md:text-base text-muted text-left">UX Designer</p>
+      <div class="reveal group flex-1 bg-panel border border-line rounded-2xl p-6 md:p-8 hover:-translate-y-2 transition-transform duration-200 flex flex-col h-[640px]" data-delay="2">
+        <span class="font-display text-5xl md:text-6xl font-bold text-line/30 group-hover:text-ink/60 mb-4 text-left">2020</span>
+        <!-- Logo位置 -->
+        <div class="w-9 h-9 rounded-xl mb-4 flex items-center justify-center overflow-hidden bg-white">
+          <img src="images/logo_2.png" alt="QQ浏览器" class="w-full h-full object-contain">
+        </div>
+        <h3 class="font-display text-xl md:text-2xl font-semibold mb-auto text-left">QQ浏览器</h3>
+        <p class="font-mono text-sm md:text-base text-muted text-left">交互设计</p>
       </div>
       <!-- 3 -->
-      <div class="reveal group flex-1 bg-panel border border-line rounded-2xl p-6 md:p-8 hover:-translate-y-2 transition-all duration-300 hover:shadow-lg flex flex-col h-[640px]" data-delay="3">
-        <span class="font-display text-5xl md:text-6xl font-bold text-line/30 mb-4 text-left">2022</span>
+      <div class="reveal group flex-1 bg-panel border border-line rounded-2xl p-6 md:p-8 hover:-translate-y-2 transition-transform duration-200 flex flex-col h-[640px]" data-delay="3">
+        <span class="font-display text-5xl md:text-6xl font-bold text-line/30 group-hover:text-ink/60 mb-4 text-left">2022</span>
+        <!-- Logo位置 -->
+        <div class="w-9 h-9 rounded-xl mb-4 flex items-center justify-center overflow-hidden bg-white">
+          <img src="images/logo_3.png" alt="抖音" class="w-full h-full object-contain">
+        </div>
         <h3 class="font-display text-xl md:text-2xl font-semibold mb-auto text-left">抖音</h3>
-        <p class="font-mono text-sm md:text-base text-muted text-left">Product Designer</p>
+        <p class="font-mono text-sm md:text-base text-muted text-left">产品设计</p>
       </div>
       <!-- 4 -->
-      <div class="reveal group flex-1 bg-panel border border-line rounded-2xl p-6 md:p-8 hover:-translate-y-2 transition-all duration-300 hover:shadow-lg flex flex-col h-[640px]" data-delay="4">
-        <span class="font-display text-5xl md:text-6xl font-bold text-line/30 mb-4 text-left">2025</span>
+      <div class="reveal group flex-1 bg-panel border border-line rounded-2xl p-6 md:p-8 hover:-translate-y-2 transition-transform duration-200 flex flex-col h-[640px]" data-delay="4">
+        <span class="font-display text-5xl md:text-6xl font-bold text-line/30 group-hover:text-ink/60 mb-4 text-left">2025</span>
+        <!-- Logo位置 -->
+        <div class="w-9 h-9 rounded-xl mb-4 flex items-center justify-center overflow-hidden bg-white">
+          <img src="images/logo_4.png" alt="大湾区数字经济研究院" class="w-full h-full object-contain">
+        </div>
         <h3 class="font-display text-xl md:text-2xl font-semibold mb-auto text-left">大湾区数字经济研究院</h3>
-        <p class="font-mono text-sm md:text-base text-muted text-left">Product Designer</p>
+        <p class="font-mono text-sm md:text-base text-muted text-left">产品设计</p>
       </div>
       <!-- 5 -->
-      <div class="reveal group flex-1 bg-panel border border-line rounded-2xl p-6 md:p-8 hover:-translate-y-2 transition-all duration-300 hover:shadow-lg flex flex-col h-[640px]" data-delay="5">
-        <span class="font-display text-5xl md:text-6xl font-bold text-line/30 mb-4 text-left">Now</span>
-        <h3 class="font-display text-xl md:text-2xl font-semibold mb-auto text-left">微保 WeSure</h3>
-        <p class="font-mono text-sm md:text-base text-muted text-left">UX Designer</p>
+      <div class="reveal group flex-1 bg-panel border border-line rounded-2xl p-6 md:p-8 hover:-translate-y-2 transition-transform duration-200 flex flex-col h-[640px]" data-delay="5">
+        <span class="font-display text-5xl md:text-6xl font-bold text-line/30 group-hover:text-ink/60 mb-4 text-left">Now</span>
+        <!-- Logo位置 -->
+        <div class="w-9 h-9 rounded-xl mb-4 flex items-center justify-center overflow-hidden bg-white">
+          <img src="images/logo_5.png" alt="腾讯微保" class="w-full h-full object-contain">
+        </div>
+        <h3 class="font-display text-xl md:text-2xl font-semibold mb-auto text-left">腾讯微保</h3>
+        <p class="font-mono text-sm md:text-base text-muted text-left">交互设计</p>
       </div>
     </div>
   </div>
@@ -356,10 +377,10 @@
       <!-- 左侧导航 -->
       <aside class="w-full md:w-1/3 shrink-0">
         <div class="sticky top-20 pt-4">
-          <h2 class="font-display text-4xl md:text-5xl font-bold italic text-ink mb-2">以往作品</h2>
-          <p class="font-mono text-xs eyebrow uppercase text-muted mb-8">Core Work · 03</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold italic text-ink mb-8">工作作品</h2>
           <nav class="flex flex-col gap-4">
             <a href="#staging" class="nav-item font-display text-2xl md:text-3xl opacity-60 hover:opacity-100 transition text-muted">抖音小程序</a>
+            <a href="#douyin-capability" class="nav-item font-display text-2xl md:text-3xl opacity-60 hover:opacity-100 transition text-muted">抖音能力输出</a>
             <a href="#version-history" class="nav-item font-display text-2xl md:text-3xl opacity-60 hover:opacity-100 transition text-muted">抖音 AI 分身</a>
             <a href="#on-page-editing" class="nav-item font-display text-2xl md:text-3xl opacity-60 hover:opacity-100 transition text-muted">腾讯 QQ 浏览器</a>
           </nav>
@@ -370,33 +391,255 @@
       <main class="w-full md:w-2/3 flex flex-col gap-24 pt-30 mt-[130px]">
       <!-- 1 抖音小程序 -->
       <section id="staging" class="feature-item">
-        <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6">
-          <div class="aspect-[4/3] bg-shell flex items-center justify-center">
-            <span class="font-mono text-muted text-sm">预览截图</span>
+        <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6 relative">
+          <!-- 轮播图容器 -->
+          <div class="aspect-[4/3] bg-shell relative overflow-hidden group" id="douyin-miniprogram-carousel">
+            <!-- 图片容器 -->
+            <div class="flex transition-transform duration-300 h-full" id="mp-slides">
+              <!-- 第一张图 -->
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center bg-shell">
+                <img src="images/gzzp_1-1.png" alt="抖音小程序1" class="w-full h-full object-cover">
+              </div>
+              <!-- 第二张图 -->
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center bg-shell">
+                <img src="images/gzzp_1-2.png" alt="抖音小程序2" class="w-full h-full object-cover">
+              </div>
+            </div>
+            <!-- 左箭头 -->
+            <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-ink/10 hover:bg-ink/30 text-white rounded-full flex items-center justify-center transition-all z-50 opacity-0 group-hover:opacity-100 cursor-pointer" onclick="mpPrev()">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <!-- 右箭头 -->
+            <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-ink/10 hover:bg-ink/30 text-white rounded-full flex items-center justify-center transition-all z-50 opacity-0 group-hover:opacity-100 cursor-pointer" onclick="mpNext()">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <!-- 指示器 -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-50 px-3 py-1.5 rounded-full" id="mp-indicators">
+              <button class="w-2 h-2 rounded-full bg-ink/30 transition-all cursor-pointer" onclick="mpGo(0)"></button>
+              <button class="w-2 h-2 rounded-full bg-ink/10 transition-all cursor-pointer" onclick="mpGo(1)"></button>
+            </div>
           </div>
         </div>
         <h3 class="font-display text-xl md:text-2xl font-semibold mb-3">抖音小程序</h3>
-        <p class="font-mono text-sm text-muted max-w-md">在抖音搜索体验设计、IM 场景设计和行业设计规范方面的作品展示。</p>
+        <p class="font-mono text-sm text-muted max-w-md">主要负责小程序基础体验优化，搜索场景、IM场景等设计。</p>
       </section>
-      <!-- 2 抖音 AI 分身 -->
+      <script>
+        // 抖音小程序轮播图
+        let mpIndex = 0;
+        function mpUpdate() {
+          const slides = document.getElementById('mp-slides');
+          const dots = document.getElementById('mp-indicators').children;
+          if (slides) slides.style.transform = `translateX(-${mpIndex * 100}%)`;
+          if (dots && dots.length > 0) {
+            for (let i = 0; i < dots.length; i++) {
+              if (i === mpIndex) {
+                dots[i].classList.remove('bg-ink/10');
+                dots[i].classList.add('bg-ink/30');
+              } else {
+                dots[i].classList.remove('bg-ink/30');
+                dots[i].classList.add('bg-ink/10');
+              }
+            }
+          }
+        }
+        function mpPrev() { mpIndex = (mpIndex - 1 + 2) % 2; mpUpdate(); }
+        function mpNext() { mpIndex = (mpIndex + 1) % 2; mpUpdate(); }
+        function mpGo(i) { mpIndex = i; mpUpdate(); }
+        
+        // 抖音能力输出轮播图
+        let capIndex = 0;
+        function capUpdate() {
+          const slides = document.getElementById('cap-slides');
+          const dots = document.getElementById('cap-indicators').children;
+          if (slides) slides.style.transform = `translateX(-${capIndex * 100}%)`;
+          if (dots && dots.length > 0) {
+            for (let i = 0; i < dots.length; i++) {
+              if (i === capIndex) {
+                dots[i].classList.remove('bg-ink/10');
+                dots[i].classList.add('bg-ink/30');
+              } else {
+                dots[i].classList.remove('bg-ink/30');
+                dots[i].classList.add('bg-ink/10');
+              }
+            }
+          }
+        }
+        function capPrev() { capIndex = (capIndex - 1 + 2) % 2; capUpdate(); }
+        function capNext() { capIndex = (capIndex + 1) % 2; capUpdate(); }
+        function capGo(i) { capIndex = i; capUpdate(); }
+        
+        // 抖音AI分身轮播图 (3张图片)
+        let avatarIndex = 0;
+        function avatarUpdate() {
+          const slides = document.getElementById('avatar-slides');
+          const dots = document.getElementById('avatar-indicators').children;
+          if (slides) slides.style.transform = `translateX(-${avatarIndex * 100}%)`;
+          if (dots && dots.length > 0) {
+            for (let i = 0; i < dots.length; i++) {
+              if (i === avatarIndex) {
+                dots[i].classList.remove('bg-ink/10');
+                dots[i].classList.add('bg-ink/30');
+              } else {
+                dots[i].classList.remove('bg-ink/30');
+                dots[i].classList.add('bg-ink/10');
+              }
+            }
+          }
+        }
+        function avatarPrev() { avatarIndex = (avatarIndex - 1 + 3) % 3; avatarUpdate(); }
+        function avatarNext() { avatarIndex = (avatarIndex + 1) % 3; avatarUpdate(); }
+        function avatarGo(i) { avatarIndex = i; avatarUpdate(); }
+        
+        // QQ浏览器轮播图 (2张图片)
+        let browserIndex = 0;
+        function browserUpdate() {
+          const slides = document.getElementById('browser-slides');
+          const dots = document.getElementById('browser-indicators').children;
+          if (slides) slides.style.transform = `translateX(-${browserIndex * 100}%)`;
+          if (dots && dots.length > 0) {
+            for (let i = 0; i < dots.length; i++) {
+              if (i === browserIndex) {
+                dots[i].classList.remove('bg-ink/10');
+                dots[i].classList.add('bg-ink/30');
+              } else {
+                dots[i].classList.remove('bg-ink/30');
+                dots[i].classList.add('bg-ink/10');
+              }
+            }
+          }
+        }
+        function browserPrev() { browserIndex = (browserIndex - 1 + 2) % 2; browserUpdate(); }
+        function browserNext() { browserIndex = (browserIndex + 1) % 2; browserUpdate(); }
+        function browserGo(i) { browserIndex = i; browserUpdate(); }
+        
+        // 初始化
+        mpUpdate();
+        capUpdate();
+        avatarUpdate();
+        browserUpdate();
+      </script>
+      <!-- 2 抖音能力输出 -->
+      <section id="douyin-capability" class="feature-item">
+        <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6 relative">
+          <!-- 轮播图容器 -->
+          <div class="aspect-[4/3] bg-shell relative overflow-hidden group" id="douyin-capability-carousel">
+            <!-- 图片容器 -->
+            <div class="flex transition-transform duration-300 h-full" id="cap-slides">
+              <!-- 第一张图 -->
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center bg-shell">
+                <img src="images/gzzp_2-1.png" alt="抖音能力输出1" class="w-full h-full object-cover">
+              </div>
+              <!-- 第二张图 -->
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center bg-shell">
+                <img src="images/gzzp_2-2.png" alt="抖音能力输出2" class="w-full h-full object-cover">
+              </div>
+            </div>
+            <!-- 左箭头 -->
+            <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-ink/10 hover:bg-ink/30 text-white rounded-full flex items-center justify-center transition-all z-50 opacity-0 group-hover:opacity-100 cursor-pointer" onclick="capPrev()">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <!-- 右箭头 -->
+            <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-ink/10 hover:bg-ink/30 text-white rounded-full flex items-center justify-center transition-all z-50 opacity-0 group-hover:opacity-100 cursor-pointer" onclick="capNext()">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <!-- 指示器 -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-50 px-3 py-1.5 rounded-full" id="cap-indicators">
+              <button class="w-2 h-2 rounded-full bg-ink/30 transition-all cursor-pointer" onclick="capGo(0)"></button>
+              <button class="w-2 h-2 rounded-full bg-ink/10 transition-all cursor-pointer" onclick="capGo(1)"></button>
+            </div>
+          </div>
+        </div>
+        <h3 class="font-display text-xl md:text-2xl font-semibold mb-3">抖音能力输出</h3>
+        <p class="font-mono text-sm text-muted max-w-md">主要负责抖音小程序的能力输出，抖音名片、开播等能力设计方案</p>
+      </section>
+      <!-- 3 抖音 AI 分身 -->
       <section id="version-history" class="feature-item">
-        <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6">
-          <div class="aspect-[4/3] bg-shell flex items-center justify-center">
-            <span class="font-mono text-muted text-sm">预览截图</span>
+        <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6 relative">
+          <!-- 轮播图容器 -->
+          <div class="aspect-[4/3] bg-shell relative overflow-hidden group" id="douyin-avatar-carousel">
+            <!-- 图片容器 -->
+            <div class="flex transition-transform duration-300 h-full" id="avatar-slides">
+              <!-- 第一张图 -->
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center bg-shell">
+                <img src="images/gzzp_3-1.png" alt="抖音AI分身1" class="w-full h-full object-cover">
+              </div>
+              <!-- 第二张图 -->
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center bg-shell">
+                <img src="images/gzzp_3-2.png" alt="抖音AI分身2" class="w-full h-full object-cover">
+              </div>
+              <!-- 第三张图 -->
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center bg-shell">
+                <img src="images/gzzp_3-3.png" alt="抖音AI分身3" class="w-full h-full object-cover">
+              </div>
+            </div>
+            <!-- 左箭头 -->
+            <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-ink/10 hover:bg-ink/30 text-white rounded-full flex items-center justify-center transition-all z-50 opacity-0 group-hover:opacity-100 cursor-pointer" onclick="avatarPrev()">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <!-- 右箭头 -->
+            <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-ink/10 hover:bg-ink/30 text-white rounded-full flex items-center justify-center transition-all z-50 opacity-0 group-hover:opacity-100 cursor-pointer" onclick="avatarNext()">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <!-- 指示器 -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-50 px-3 py-1.5 rounded-full" id="avatar-indicators">
+              <button class="w-2 h-2 rounded-full bg-ink/30 transition-all cursor-pointer" onclick="avatarGo(0)"></button>
+              <button class="w-2 h-2 rounded-full bg-ink/10 transition-all cursor-pointer" onclick="avatarGo(1)"></button>
+              <button class="w-2 h-2 rounded-full bg-ink/10 transition-all cursor-pointer" onclick="avatarGo(2)"></button>
+            </div>
           </div>
         </div>
         <h3 class="font-display text-xl md:text-2xl font-semibold mb-3">抖音 AI 分身</h3>
-        <p class="font-mono text-sm text-muted max-w-md">0-1 搭建创建平台、Agent 方向探索、分身能力体验设计的完整作品展示。</p>
+        <p class="font-mono text-sm text-muted max-w-md">主要负责0-1 搭建创建平台、Agent方向探索等设计方案。</p>
       </section>
-      <!--3 腾讯 QQ 浏览器 -->
+      <!--4 腾讯 QQ 浏览器 -->
       <section id="on-page-editing" class="feature-item">
-        <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6">
-          <div class="aspect-[4/3] bg-shell flex items-center justify-center">
-            <span class="font-mono text-muted text-sm">预览截图</span>
+        <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6 relative">
+          <!-- 轮播图容器 -->
+          <div class="aspect-[4/3] bg-shell relative overflow-hidden group" id="qq-browser-carousel">
+            <!-- 图片容器 -->
+            <div class="flex transition-transform duration-300 h-full" id="browser-slides">
+              <!-- 第一张图 -->
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center bg-shell">
+                <img src="images/gzzp_4-1.png" alt="QQ浏览器1" class="w-full h-full object-cover">
+              </div>
+              <!-- 第二张图 -->
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center bg-shell">
+                <img src="images/gzzp_4-2.png" alt="QQ浏览器2" class="w-full h-full object-cover">
+              </div>
+            </div>
+            <!-- 左箭头 -->
+            <button class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-ink/10 hover:bg-ink/30 text-white rounded-full flex items-center justify-center transition-all z-50 opacity-0 group-hover:opacity-100 cursor-pointer" onclick="browserPrev()">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <!-- 右箭头 -->
+            <button class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-ink/10 hover:bg-ink/30 text-white rounded-full flex items-center justify-center transition-all z-50 opacity-0 group-hover:opacity-100 cursor-pointer" onclick="browserNext()">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <!-- 指示器 -->
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-50 px-3 py-1.5 rounded-full" id="browser-indicators">
+              <button class="w-2 h-2 rounded-full bg-ink/30 transition-all cursor-pointer" onclick="browserGo(0)"></button>
+              <button class="w-2 h-2 rounded-full bg-ink/10 transition-all cursor-pointer" onclick="browserGo(1)"></button>
+            </div>
           </div>
         </div>
         <h3 class="font-display text-xl md:text-2xl font-semibold mb-3">腾讯 QQ 浏览器</h3>
-        <p class="font-mono text-sm text-muted max-w-md">小程序搜索、跨 App 搜索、搜索设计规范的核心产品作品展示。</p>
+        <p class="font-mono text-sm text-muted max-w-md">主要负责小程序搜索、跨 App 搜索、搜索设计规范等。</p>
       </section>
     </main>
     </div>
@@ -475,73 +718,52 @@
       <section id="ai-frisbee" class="ai-feature-item">
         <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6">
           <div class="aspect-[4/3] bg-shell flex items-center justify-center">
-            <svg viewBox="0 0 120 120" class="w-32 h-32">
-              <ellipse cx="60" cy="66" rx="44" ry="15" fill="#C8612E"/>
-              <ellipse cx="60" cy="60" rx="44" ry="15" fill="#E07A3E"/>
-              <ellipse cx="60" cy="58" rx="25" ry="8" fill="#F8F4E9"/>
-              <circle cx="60" cy="58" r="4" fill="#9B2D20"/>
-            </svg>
+            <img src="images/aizp_1.png" alt="AI定制飞盘" class="w-full h-full object-cover">
           </div>
         </div>
         <h3 class="font-display text-xl md:text-2xl font-semibold mb-3">AI 定制飞盘</h3>
-        <p class="font-mono text-sm text-muted max-w-md">AI 生成图案 × 个性化运动周边定制的作品展示。</p>
+        <p class="font-mono text-sm text-muted max-w-md">为飞盘爱好者提供AI定制飞盘服务，根据用户需求生成个性化飞盘。</p>
       </section>
       <!-- 2 模拟对话大挑战 -->
       <section id="ai-chat" class="ai-feature-item">
         <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6">
           <div class="aspect-[4/3] bg-shell flex items-center justify-center">
-            <svg viewBox="0 0 120 120" class="w-32 h-32">
-              <rect x="18" y="32" width="60" height="38" rx="9" fill="#2B5FD9"/>
-              <path d="M30 70 l0 12 14 -12 Z" fill="#2B5FD9"/>
-              <rect x="46" y="54" width="56" height="36" rx="9" fill="#F8F4E9" stroke="#D8CEB9" stroke-width="2"/>
-              <path d="M90 90 l0 11 -13 -11 Z" fill="#F8F4E9" stroke="#D8CEB9" stroke-width="2"/>
-              <circle cx="34" cy="50" r="3" fill="#fff"/><circle cx="46" cy="50" r="3" fill="#fff"/><circle cx="58" cy="50" r="3" fill="#fff"/>
-            </svg>
+            <img src="images/aizp_2.png" alt="模拟对话大挑战" class="w-full h-full object-cover">
           </div>
         </div>
         <h3 class="font-display text-xl md:text-2xl font-semibold mb-3">模拟对话大挑战</h3>
-        <p class="font-mono text-sm text-muted max-w-md">情景式 AI 对话训练 × 闯关玩法的完整作品展示。</p>
+        <p class="font-mono text-sm text-muted max-w-md">借鉴哄哄模拟器的玩法，探索AI+广告的商业模式。</p>
       </section>
       <!--3 FishAI -->
       <section id="ai-fish" class="ai-feature-item">
         <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6">
           <div class="aspect-[4/3] bg-shell flex items-center justify-center">
-            <svg viewBox="0 0 120 120" class="w-32 h-32">
-              <path d="M28 60 q24 -28 56 0 q-24 28 -56 0 Z" fill="#2B5FD9"/>
-              <path d="M84 60 l20 -13 0 26 Z" fill="#C8612E"/>
-              <circle cx="44" cy="56" r="4.5" fill="#fff"/><circle cx="44" cy="56" r="2" fill="#1C1A17"/>
-              <circle cx="64" cy="50" r="2.5" fill="#F8F4E9"/><circle cx="73" cy="58" r="2" fill="#F8F4E9"/>
-            </svg>
+            <img src="images/aizp_3.png" alt="FishAI" class="w-full h-full object-cover">
           </div>
         </div>
-        <h3 class="font-display text-xl md:text-2xl font-semibold mb-3">FishAI</h3>
-        <p class="font-mono text-sm text-muted max-w-md">轻量 AI 助手 × 效率工具探索的核心产品展示。</p>
+        <h3 class="font-display text-xl md:text-2xl font-semibold mb-3">AI情报追踪</h3>
+        <p class="font-mono text-sm text-muted max-w-md">支持订阅5000+信息源，通过AI提高获取信息效率。</p>
       </section>
       <!--4 好好告别 -->
       <section id="ai-goodbye" class="ai-feature-item">
         <div class="bg-panel border border-line rounded-2xl overflow-hidden mb-6">
           <div class="aspect-[4/3] bg-shell flex items-center justify-center">
-            <svg viewBox="0 0 120 120" class="w-32 h-32">
-              <path d="M60 88 C28 66 30 40 48 38 C58 37 60 47 60 51 C60 47 62 37 72 38 C90 40 92 66 60 88 Z" fill="#9B2D20"/>
-              <circle cx="88" cy="40" r="10" fill="#F8F4E9" stroke="#D8CEB9" stroke-width="2"/>
-              <path d="M88 34 l0 7 5 2" stroke="#1C1A17" stroke-width="2" fill="none" stroke-linecap="round"/>
-            </svg>
+            <img src="images/aizp_4.png" alt="好好告别" class="w-full h-full object-cover">
           </div>
         </div>
         <h3 class="font-display text-xl md:text-2xl font-semibold mb-3">好好告别</h3>
-        <p class="font-mono text-sm text-muted max-w-md">情感陪伴 × 临终关怀的温柔设计作品展示。</p>
+        <p class="font-mono text-sm text-muted max-w-md">模拟去世亲人直接在微信对话，帮助用户好好告别。</p>
       </section>
     </main>
 
     <!-- 左侧导航（右对齐） -->
     <aside class="w-full md:w-1/3 shrink-0 order-1 md:order-2">
       <div class="sticky top-20 pt-4 text-right">
-        <h2 class="font-display text-4xl md:text-5xl font-bold italic text-ink mb-2">独立AI产品</h2>
-        <p class="font-mono text-xs eyebrow uppercase text-muted mb-8">Indie AI · 04</p>
+        <h2 class="font-display text-4xl md:text-5xl font-bold italic text-ink mb-8">独立AI产品</h2>
         <nav class="flex flex-col gap-4 items-end">
           <a href="#ai-frisbee" class="ai-nav-item font-display text-2xl md:text-3xl opacity-60 hover:opacity-100 transition text-muted">AI 定制飞盘</a>
           <a href="#ai-chat" class="ai-nav-item font-display text-2xl md:text-3xl opacity-60 hover:opacity-100 transition text-muted">模拟对话大挑战</a>
-          <a href="#ai-fish" class="ai-nav-item font-display text-2xl md:text-3xl opacity-60 hover:opacity-100 transition text-muted">FishAI</a>
+          <a href="#ai-fish" class="ai-nav-item font-display text-2xl md:text-3xl opacity-60 hover:opacity-100 transition text-muted">AI 情报追踪</a>
           <a href="#ai-goodbye" class="ai-nav-item font-display text-2xl md:text-3xl opacity-60 hover:opacity-100 transition text-muted">好好告别</a>
         </nav>
       </div>
@@ -592,137 +814,94 @@
 <!-- =================================================================== -->
 <section id="s5" class="relative z-10 min-h-screen w-full flex items-center px-8 md:px-20 py-20">
   <div class="max-w-[1280px] mx-auto w-full">
-    <div class="reveal flex items-end justify-between mb-12 pb-6">
-      <h2 class="font-display text-4xl md:text-5xl font-bold italic">产品思考文档</h2>
-      <p class="font-mono text-xs md:text-sm eyebrow uppercase text-muted">Research Notes · 06</p>
+    <div class="reveal mb-12 pb-6" data-delay="1">
+      <h2 class="font-display text-4xl md:text-5xl font-bold italic">产品思考</h2>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- 卡片 1 -->
-      <article class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition shadow-sm flex flex-col h-full" data-delay="1">
+      <a href="https://my.feishu.cn/wiki/Y3f6w9LoWiHPZ5kDPzuc9x6Znlc?from=from_copylink" target="_blank" class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition flex flex-col h-full" data-delay="2">
         <!-- 图片占位 -->
         <div class="aspect-[4/3] bg-shell flex items-center justify-center border-b border-line flex-shrink-0">
-          <div class="w-full h-full bg-line/30 flex items-center justify-center">
-            <span class="font-mono text-muted text-sm">图片占位</span>
-          </div>
+          <img src="images/cpsk_1.png" alt="抖音·快手·小红书·视频号AI爆款内容特征分析" class="w-full h-full object-cover">
         </div>
         <!-- 内容区 -->
         <div class="p-6 flex-grow">
           <p class="font-mono text-xs text-muted uppercase tracking-wider mb-3">2024.12</p>
-          <h3 class="font-display text-xl font-semibold leading-snug">抖音 / 快手 / 小红书 / 视频号 AI 爆款内容特征分析</h3>
-          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">// 这里是简短的项目描述，关于多平台内容拆解的思考与总结</p>
-          <!-- 标签 -->
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">多平台</span>
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">内容拆解</span>
-          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">抖音 · 快手 · 小红书 · 视频号 AI 爆款内容特征分析</h3>
+          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">探索爆火的AI内容有哪些共性特征</p>
         </div>
-      </article>
+      </a>
 
       <!-- 卡片 2 -->
-      <article class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition shadow-sm flex flex-col h-full" data-delay="2">
+      <a href="https://my.feishu.cn/wiki/MdZnwIv9qiPPt1koIkOcgazUntc?from=from_copylink" target="_blank" class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition flex flex-col h-full" data-delay="3">
         <!-- 图片占位 -->
         <div class="aspect-[4/3] bg-shell flex items-center justify-center border-b border-line flex-shrink-0">
-          <div class="w-full h-full bg-line/30 flex items-center justify-center">
-            <span class="font-mono text-muted text-sm">图片占位</span>
-          </div>
+          <img src="images/cpsk_2.png" alt="Relevance AI体验速记" class="w-full h-full object-cover">
         </div>
         <!-- 内容区 -->
         <div class="p-6 flex-grow">
           <p class="font-mono text-xs text-muted uppercase tracking-wider mb-3">2025.03</p>
           <h3 class="font-display text-xl font-semibold leading-snug">Relevance AI 体验速记</h3>
-          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">// 这里是简短的项目描述，关于 AI 对话式构建 Agent 的体验记录</p>
-          <!-- 标签 -->
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">AI Agent</span>
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">对话式</span>
-          </div>
+          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">Agent搭建平台最早实现AI主导搭建的平台</p>
         </div>
-      </article>
+      </a>
 
       <!-- 卡片 3 -->
-      <article class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition shadow-sm flex flex-col h-full" data-delay="3">
+      <a href="https://my.feishu.cn/wiki/W1RuwI9lIi0iQpk4H8BcqkAJnVf?from=from_copylink" target="_blank" class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition flex flex-col h-full" data-delay="4">
         <!-- 图片占位 -->
         <div class="aspect-[4/3] bg-shell flex items-center justify-center border-b border-line flex-shrink-0">
-          <div class="w-full h-full bg-line/30 flex items-center justify-center">
-            <span class="font-mono text-muted text-sm">图片占位</span>
-          </div>
+          <img src="images/cpsk_3.png" alt="Agent产品能力对比分析" class="w-full h-full object-cover">
         </div>
         <!-- 内容区 -->
         <div class="p-6 flex-grow">
           <p class="font-mono text-xs text-muted uppercase tracking-wider mb-3">2025.05</p>
           <h3 class="font-display text-xl font-semibold leading-snug">Agent 产品能力对比分析</h3>
-          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">// 这里是简短的项目描述，持续追踪各 Agent 产品的能力演进</p>
-          <!-- 标签 -->
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">持续追踪</span>
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">产品对比</span>
-          </div>
+          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">Manus、Coze Speace、Flowith、天工Agent</p>
         </div>
-      </article>
+      </a>
 
       <!-- 卡片 4 -->
-      <article class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition shadow-sm flex flex-col h-full" data-delay="4">
+      <a href="https://my.feishu.cn/wiki/Yq4Hwd3SYiFiMDkCEMqcMyYRnuf?from=from_copylink" target="_blank" class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition flex flex-col h-full" data-delay="5">
         <!-- 图片占位 -->
         <div class="aspect-[4/3] bg-shell flex items-center justify-center border-b border-line flex-shrink-0">
-          <div class="w-full h-full bg-line/30 flex items-center justify-center">
-            <span class="font-mono text-muted text-sm">图片占位</span>
-          </div>
+          <img src="images/cpsk_4.png" alt="Sora·Runway·即梦·可灵文生视频测评" class="w-full h-full object-cover">
         </div>
         <!-- 内容区 -->
         <div class="p-6 flex-grow">
           <p class="font-mono text-xs text-muted uppercase tracking-wider mb-3">2025.05</p>
           <h3 class="font-display text-xl font-semibold leading-snug">Sora · Runway · 即梦 · 可灵 文生视频测评</h3>
-          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">// 这里是简短的项目描述，关于主流文生视频产品的横向测评</p>
-          <!-- 标签 -->
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">Text-to-Video</span>
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">横评</span>
-          </div>
+          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">对视频AI产品的一手测评</p>
         </div>
-      </article>
+      </a>
 
       <!-- 卡片 5 -->
-      <article class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition shadow-sm flex flex-col h-full" data-delay="5">
+      <a href="https://my.feishu.cn/wiki/Glgyw2Zn0iaes8kMbMRc9TQpn9b?from=from_copylink" target="_blank" class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition flex flex-col h-full" data-delay="6">
         <!-- 图片占位 -->
         <div class="aspect-[4/3] bg-shell flex items-center justify-center border-b border-line flex-shrink-0">
-          <div class="w-full h-full bg-line/30 flex items-center justify-center">
-            <span class="font-mono text-muted text-sm">图片占位</span>
-          </div>
+          <img src="images/cpsk_5.png" alt="AI玩法体裁收集与思考" class="w-full h-full object-cover">
         </div>
         <!-- 内容区 -->
         <div class="p-6 flex-grow">
           <p class="font-mono text-xs text-muted uppercase tracking-wider mb-3">2025.06</p>
           <h3 class="font-display text-xl font-semibold leading-snug">AI 玩法体裁收集与思考</h3>
-          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">// 这里是简短的项目描述，持续收集和整理有趣的 AI 玩法</p>
-          <!-- 标签 -->
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">持续追踪</span>
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">玩法研究</span>
-          </div>
+          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">对当下爆火的AI玩法的分析与思考</p>
         </div>
-      </article>
+      </a>
 
       <!-- 卡片 6 -->
-      <article class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition shadow-sm flex flex-col h-full" data-delay="6">
+      <a href="https://my.feishu.cn/wiki/Da1Ew9mQdisgnUkKeQ9cr9mSnuf?from=from_copylink" target="_blank" class="reveal bg-panel border border-line rounded-2xl overflow-hidden hover:-translate-y-1.5 transition flex flex-col h-full" data-delay="7">
         <!-- 图片占位 -->
         <div class="aspect-[4/3] bg-shell flex items-center justify-center border-b border-line flex-shrink-0">
-          <div class="w-full h-full bg-line/30 flex items-center justify-center">
-            <span class="font-mono text-muted text-sm">图片占位</span>
-          </div>
+          <img src="images/cpsk_6.png" alt="Libtv·Openart·即梦·小云雀产品分析" class="w-full h-full object-cover">
         </div>
         <!-- 内容区 -->
         <div class="p-6 flex-grow">
           <p class="font-mono text-xs text-muted uppercase tracking-wider mb-3">2026.03</p>
-          <h3 class="font-display text-xl font-semibold leading-snug">Libtv · Openart · 即梦 · 小云雀 产品分析</h3>
-          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">// 这里是简短的项目描述，关于多个AI产品的深度分析与总结</p>
-          <!-- 标签 -->
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">产品分析</span>
-            <span class="font-mono text-xs bg-cream text-muted px-2.5 py-1 rounded-full">多产品</span>
-          </div>
+          <h3 class="font-display text-xl font-semibold leading-snug">Libtv · Flora · Oiioii · Ribbi产品分析</h3>
+          <p class="font-mono text-sm text-muted mt-3 leading-relaxed">关于多个AI视频制作产品的深度分析与总结</p>
         </div>
-      </article>
+      </a>
     </div>
   </div>
 </section>
@@ -731,78 +910,241 @@
 <!-- =================================================================== -->
 <section id="s6" class="relative z-10 min-h-screen w-full flex items-center px-8 md:px-20 py-20">
   <div class="max-w-[1280px] mx-auto w-full">
-    <div class="reveal text-center mb-14">
-      <p class="font-mono text-xs md:text-sm eyebrow uppercase text-muted mb-4">Off the clock · 05</p>
+    <style>
+      /* 爱好展示区样式 */
+      .hobby-visual {
+        position: relative;
+        margin-bottom: 40px;
+      }
+      .hobby-card {
+        padding: 20px;
+        border: 1px solid rgba(28, 26, 23, 0.1);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        background: transparent;
+        flex: 1;
+      }
+      .hobby-card.active {
+        opacity: 1;
+      }
+      .hobby-card.inactive {
+        opacity: 0.4;
+      }
+      .hobby-progress-bar {
+        height: 3px;
+        width: 100%;
+        background: rgba(107, 99, 87, 0.1);
+        border-radius: 1.5px;
+        overflow: hidden;
+        position: relative;
+        margin-top: 12px;
+      }
+      .hobby-progress-fill {
+        height: 100%;
+        background: #1C1A17;
+        border-radius: 1.5px;
+        width: 0;
+      }
+    </style>
+
+    <!-- 顶部区域 -->
+    <div class="reveal mb-10">
       <h2 class="font-display text-4xl md:text-5xl font-bold italic">我的爱好</h2>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <!-- 画画 -->
-      <div class="reveal bg-panel border border-line rounded-2xl p-8 text-center hover:-translate-y-1.5 transition shadow-sm" data-delay="1">
-        <div class="mx-auto w-28 h-28 mb-6">
-          <svg viewBox="0 0 120 120" class="w-full h-full">
-            <rect x="22" y="26" width="76" height="58" rx="6" fill="#F8F4E9" stroke="#1C1A17" stroke-width="3"/>
-            <path d="M30 76 l16 -22 12 14 14 -20 16 28 Z" fill="#C8612E"/>
-            <circle cx="44" cy="44" r="6" fill="#2B5FD9"/>
-            <rect x="50" y="88" width="20" height="8" fill="#9a937e"/>
-            <rect x="38" y="96" width="44" height="6" rx="3" fill="#1C1A17"/>
-          </svg>
+    <!-- 功能卡片 - 放在标题下方 -->
+    <div class="reveal mb-10" data-delay="1">
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="hobby-card active" data-id="1" data-delay="2">
+          <h3 class="font-display text-xl md:text-2xl font-semibold">画画</h3>
+          <p class="font-mono text-sm text-muted mt-2">从小到大的爱好</p>
+          <div class="hobby-progress-bar">
+            <div class="hobby-progress-fill"></div>
+          </div>
         </div>
-        <h3 class="font-display text-xl md:text-2xl font-semibold">画画</h3>
-        <p class="font-mono text-xs text-muted mt-3">Drawing · 把观察变成笔触</p>
+        <div class="hobby-card inactive" data-id="2" data-delay="3">
+          <h3 class="font-display text-xl md:text-2xl font-semibold">徒步</h3>
+          <p class="font-mono text-sm text-muted mt-2">做过最疯狂的事带583人一起环岛徒步</p>
+          <div class="hobby-progress-bar">
+            <div class="hobby-progress-fill"></div>
+          </div>
+        </div>
+        <div class="hobby-card inactive" data-id="3" data-delay="4">
+          <h3 class="font-display text-xl md:text-2xl font-semibold">播客</h3>
+          <p class="font-mono text-sm text-muted mt-2">落羽敬斋FM第一位主播，从0-2000粉</p>
+          <div class="hobby-progress-bar">
+            <div class="hobby-progress-fill"></div>
+          </div>
+        </div>
       </div>
-      <!-- 徒步 -->
-      <div class="reveal bg-panel border border-line rounded-2xl p-8 text-center hover:-translate-y-1.5 transition shadow-sm" data-delay="2">
-        <div class="mx-auto w-28 h-28 mb-6">
-          <svg viewBox="0 0 120 120" class="w-full h-full">
-            <path d="M14 90 L46 40 L66 72 L82 48 L106 90 Z" fill="#2B5FD9"/>
-            <path d="M46 40 L58 58 L40 58 Z" fill="#F8F4E9"/>
-            <circle cx="92" cy="34" r="11" fill="#C8612E"/>
-            <path d="M14 90 L106 90" stroke="#1C1A17" stroke-width="3"/>
-          </svg>
+    </div>
+
+    <!-- 中部展示区 - 图片 -->
+    <div class="reveal hobby-visual mb-10" data-delay="2">
+      <div class="aspect-[2/1] bg-panel border border-line flex items-center justify-center overflow-hidden rounded-2xl">
+        <div class="w-full h-full" id="hobby-image">
+          <!-- 默认显示画画的图片 -->
+          <img src="images/xq_1.png" alt="画画" class="w-full h-full object-cover">
         </div>
-        <h3 class="font-display text-xl md:text-2xl font-semibold">徒步</h3>
-        <p class="font-mono text-xs text-muted mt-3">Hiking · 在路上重启大脑</p>
-      </div>
-      <!-- 撸猫 -->
-      <div class="reveal bg-panel border border-line rounded-2xl p-8 text-center hover:-translate-y-1.5 transition shadow-sm" data-delay="3">
-        <div class="mx-auto w-28 h-28 mb-6">
-          <svg viewBox="0 0 120 120" class="w-full h-full">
-            <path d="M36 44 L30 22 L48 38 Z" fill="#6B6357"/>
-            <path d="M84 44 L90 22 L72 38 Z" fill="#6B6357"/>
-            <ellipse cx="60" cy="66" rx="34" ry="30" fill="#6B6357"/>
-            <circle cx="48" cy="62" r="4" fill="#F8F4E9"/><circle cx="72" cy="62" r="4" fill="#F8F4E9"/>
-            <path d="M55 74 q5 5 10 0" stroke="#F8F4E9" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M60 70 l-3 4 6 0 Z" fill="#C8612E"/>
-            <path d="M34 72 l-14 -3 M34 78 l-14 3 M86 72 l14 -3 M86 78 l14 3" stroke="#F8F4E9" stroke-width="1.5"/>
-          </svg>
-        </div>
-        <h3 class="font-display text-xl md:text-2xl font-semibold">撸猫</h3>
-        <p class="font-mono text-xs text-muted mt-3">Cats · 治愈系日常充电</p>
       </div>
     </div>
   </div>
+
+  <script>
+    // 图片路径存储
+    const hobbyImages = {
+      1: '<img src="images/xq_1.png" alt="画画" class="w-full h-full object-cover">',
+      2: '<img src="images/xq_2.png" alt="徒步" class="w-full h-full object-cover">',
+      3: '<img src="images/xq_3.png" alt="播客" class="w-full h-full object-cover">'
+    };
+
+    let currentHobby = 1;
+    let autoPlayInterval = null;
+    
+    // 爱好卡片交互
+    const hobbyCards = document.querySelectorAll('.hobby-card');
+    const hobbyImage = document.getElementById('hobby-image');
+    
+    function setActiveHobby(id) {
+      hobbyCards.forEach(item => {
+        item.classList.remove('active');
+        item.classList.add('inactive');
+        const progressFill = item.querySelector('.hobby-progress-fill');
+        progressFill.style.transition = 'none';
+        progressFill.style.width = '0';
+      });
+      
+      const activeCard = document.querySelector(`.hobby-card[data-id="${id}"]`);
+      if (activeCard) {
+        activeCard.classList.remove('inactive');
+        activeCard.classList.add('active');
+        const progressFill = activeCard.querySelector('.hobby-progress-fill');
+        // 先强制重绘，确保transition能生效
+        progressFill.offsetWidth;
+        progressFill.style.transition = 'width 5s linear';
+        progressFill.style.width = '100%';
+      }
+      
+      if (hobbyImages[id]) {
+        hobbyImage.innerHTML = hobbyImages[id];
+      }
+      
+      currentHobby = id;
+    }
+    
+    hobbyCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const id = card.dataset.id;
+        setActiveHobby(id);
+        // 重置自动播放
+        resetAutoPlay();
+      });
+    });
+
+    // 自动播放
+    function autoPlay() {
+      currentHobby++;
+      if (currentHobby > 3) currentHobby = 1;
+      setActiveHobby(currentHobby);
+    }
+    
+    function resetAutoPlay() {
+      if (autoPlayInterval) {
+        clearInterval(autoPlayInterval);
+      }
+      autoPlayInterval = setInterval(autoPlay, 5000);
+    }
+
+    // 初始化
+    setActiveHobby(1);
+    resetAutoPlay();
+  </script>
 </section>
 
 <!-- =================================================================== -->
 <!-- 屏 7 · 尾页 · 致谢 -->
 <!-- =================================================================== -->
 <section id="s7" class="relative z-10 min-h-screen w-full flex flex-col items-center justify-center text-center px-8 py-20">
-  <div class="reveal max-w-2xl">
-    <p class="font-mono text-xs md:text-sm eyebrow uppercase text-muted mb-8">Thank you</p>
+  <!-- 底部复古渐变 -->
+  <div class="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-[#C8612E]/20 via-[#2B5FD9]/10 to-transparent pointer-events-none"></div>
+  <div class="reveal max-w-2xl relative z-10">
     <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight">感谢观看</h2>
-    <p class="reveal font-display text-xl md:text-3xl italic mt-4 text-ink/80" data-delay="1">期待与你一起，把好设计做出来。</p>
+    <p class="reveal font-display text-xl md:text-3xl italic mt-4 text-ink/80" data-delay="1">期待和大家的合作，请多指教。</p>
     <p class="reveal mt-10 text-lg md:text-xl text-ink/75 leading-relaxed" data-delay="2">
-      做产品设计这些年，我始终相信好的体验是「克制」与「同理心」的平衡。<br class="hidden md:block"/>
-      很高兴在这里与各位见面，欢迎随时交流。
     </p>
     <div class="reveal mt-12 flex items-center justify-center gap-4 flex-wrap" data-delay="3">
-      <span class="inline-flex items-center bg-ink text-cream font-mono text-sm px-7 py-3.5 rounded-full">葛壮壮 · 产品设计师</span>
       <a href="#s1" class="inline-flex items-center border border-ink text-ink font-mono text-sm px-7 py-3.5 rounded-full hover:bg-ink hover:text-cream transition">↑ 回到顶部</a>
     </div>
-    <p class="reveal font-mono text-xs text-muted/60 mt-16" data-delay="4">© 2026 · Made with care, in retro mint.</p>
   </div>
 </section>
+
+<!-- =================================================================== -->
+<!-- 轮播图功能 -->
+<!-- =================================================================== -->
+<script>
+  // 存储各轮播图的当前索引
+  const carouselStates = {};
+
+  // 切换到上一张
+  function prevSlide(carouselId) {
+    const slides = document.getElementById(carouselId + '-slides');
+    const indicators = document.getElementById(carouselId + '-indicators');
+    if (!carouselStates[carouselId]) carouselStates[carouselId] = 0;
+    carouselStates[carouselId] = (carouselStates[carouselId] - 1 + 2) % 2; // 2张图片
+    updateCarousel(carouselId, slides, indicators);
+  }
+
+  // 切换到下一张
+  function nextSlide(carouselId) {
+    const slides = document.getElementById(carouselId + '-slides');
+    const indicators = document.getElementById(carouselId + '-indicators');
+    if (!carouselStates[carouselId]) carouselStates[carouselId] = 0;
+    carouselStates[carouselId] = (carouselStates[carouselId] + 1) % 2; // 2张图片
+    updateCarousel(carouselId, slides, indicators);
+  }
+
+  // 跳转到指定图片
+  function goToSlide(carouselId, index) {
+    const slides = document.getElementById(carouselId + '-slides');
+    const indicators = document.getElementById(carouselId + '-indicators');
+    carouselStates[carouselId] = index;
+    updateCarousel(carouselId, slides, indicators);
+  }
+
+  // 更新轮播图状态
+  function updateCarousel(carouselId, slides, indicators) {
+    const currentIndex = carouselStates[carouselId];
+    // 更新图片位置
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    // 更新指示器
+    const dots = indicators.querySelectorAll('button');
+    dots.forEach((dot, i) => {
+      if (i === currentIndex) {
+        dot.classList.remove('bg-ink/10');
+        dot.classList.add('bg-ink/30');
+      } else {
+        dot.classList.remove('bg-ink/30');
+        dot.classList.add('bg-ink/10');
+      }
+    });
+  }
+
+  // 初始化轮播图
+  function initCarousel(carouselId) {
+    carouselStates[carouselId] = 0;
+    const slides = document.getElementById(carouselId + '-slides');
+    const indicators = document.getElementById(carouselId + '-indicators');
+    if (slides && indicators) {
+      updateCarousel(carouselId, slides, indicators);
+    }
+  }
+
+  // 页面加载完成后初始化轮播图
+  document.addEventListener('DOMContentLoaded', function() {
+    initCarousel('douyin-miniprogram-carousel');
+  });
+</script>
 
 <!-- =================================================================== -->
 <!-- 脚本：入场动画（IntersectionObserver）+ 导航圆点高亮 -->
@@ -827,7 +1169,7 @@
     }
 
     // 2) 右侧导航圆点：高亮当前所在屏
-    var sections = Array.prototype.slice.call(document.querySelectorAll('section[id]'));
+    var sections = Array.prototype.slice.call(document.querySelectorAll('section[id^="s"]'));
     var dots = Array.prototype.slice.call(document.querySelectorAll('.nav-dot'));
     
     function updateNav() {
