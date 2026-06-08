@@ -1069,6 +1069,130 @@
 </section>
 
 <!-- =================================================================== -->
+<!-- 屏 6.5 · 话题征集 -->
+<!-- =================================================================== -->
+<section id="s6.5" class="relative z-10 w-full flex items-center px-8 md:px-20 py-20">
+  <div class="max-w-[640px] mx-auto w-full">
+    <div class="reveal mb-10 text-center">
+      <h2 class="font-display font-bold italic" style="font-size: 32px;">你希望听我分享什么话题</h2>
+    </div>
+
+    <div class="reveal bg-panel border border-line rounded-2xl p-8 text-center" data-delay="1" id="topic-container">
+      <!-- 选项列表 -->
+      <div class="space-y-4 mb-8" id="topic-options">
+        <label class="flex items-start gap-3 cursor-pointer group topic-label" data-topic="1">
+          <div class="flex items-start gap-3 flex-1">
+            <input type="checkbox" class="topic-checkbox w-5 h-5 mt-0.5 accent-[#9B2D20] cursor-pointer" data-topic="1">
+            <span class="font-mono text-base text-ink group-hover:text-ink/80 transition">初创/独立小团队中设计师如何用AI交付设计方案</span>
+          </div>
+          <span class="font-mono text-sm text-muted vote-count" data-topic="1">0人</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer group topic-label" data-topic="2">
+          <div class="flex items-start gap-3 flex-1">
+            <input type="checkbox" class="topic-checkbox w-5 h-5 mt-0.5 accent-[#9B2D20] cursor-pointer" data-topic="2">
+            <span class="font-mono text-base text-ink group-hover:text-ink/80 transition">如何用Coding工具做出高质量符合设计规范的设计方案</span>
+          </div>
+          <span class="font-mono text-sm text-muted vote-count" data-topic="2">0人</span>
+        </label>
+        <label class="flex items-start gap-3 cursor-pointer group topic-label" data-topic="3">
+          <div class="flex items-start gap-3 flex-1">
+            <input type="checkbox" class="topic-checkbox w-5 h-5 mt-0.5 accent-[#9B2D20] cursor-pointer" data-topic="3">
+            <span class="font-mono text-base text-ink group-hover:text-ink/80 transition">个人使用AI高效、省钱的野路子</span>
+          </div>
+          <span class="font-mono text-sm text-muted vote-count" data-topic="3">0人</span>
+        </label>
+      </div>
+
+      <!-- 确认按钮 -->
+      <button id="confirm-topics" class="inline-flex items-center bg-ink text-cream font-mono text-sm px-7 py-3.5 rounded-full hover:opacity-85 transition">
+        确认选择 →
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // 话题选择逻辑
+    const checkboxes = document.querySelectorAll('.topic-checkbox');
+    const confirmBtn = document.getElementById('confirm-topics');
+    const topicContainer = document.getElementById('topic-container');
+    const topicLabels = document.querySelectorAll('.topic-label');
+    
+    // 模拟投票数据
+    const voteCounts = {
+      1: 0,
+      2: 0,
+      3: 0
+    };
+    
+    confirmBtn.addEventListener('click', function() {
+      const selectedTopics = [];
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          selectedTopics.push(cb.dataset.topic);
+          // 更新投票数
+          voteCounts[cb.dataset.topic]++;
+        }
+      });
+      
+      if (selectedTopics.length > 0) {
+        // 本地存储选择结果
+        localStorage.setItem('selectedTopics', JSON.stringify(selectedTopics));
+        localStorage.setItem('voteCounts', JSON.stringify(voteCounts));
+        
+        // 更新显示的投票数
+        updateVoteCounts();
+        
+        // 整个容器置灰
+        topicContainer.classList.add('opacity-50', 'pointer-events-none');
+        
+        // 按钮变灰
+        confirmBtn.textContent = '已确认 ✓';
+        confirmBtn.classList.add('opacity-50');
+        confirmBtn.classList.remove('hover:opacity-85');
+        confirmBtn.disabled = true;
+      }
+    });
+
+    // 更新投票数显示
+    function updateVoteCounts() {
+      document.querySelectorAll('.vote-count').forEach(el => {
+        const topicId = el.dataset.topic;
+        el.textContent = `${voteCounts[topicId]}人`;
+      });
+    }
+
+    // 页面加载时恢复选择状态
+    document.addEventListener('DOMContentLoaded', function() {
+      // 恢复投票数据
+      const savedVotes = localStorage.getItem('voteCounts');
+      if (savedVotes) {
+        const savedVoteCounts = JSON.parse(savedVotes);
+        Object.keys(savedVoteCounts).forEach(key => {
+          voteCounts[key] = savedVoteCounts[key];
+        });
+        updateVoteCounts();
+      }
+      
+      // 恢复选择状态
+      const saved = localStorage.getItem('selectedTopics');
+      if (saved) {
+        const selectedTopics = JSON.parse(saved);
+        checkboxes.forEach(cb => {
+          if (selectedTopics.includes(cb.dataset.topic)) {
+            cb.checked = true;
+          }
+        });
+        topicContainer.classList.add('opacity-50', 'pointer-events-none');
+        confirmBtn.textContent = '已确认 ✓';
+        confirmBtn.classList.add('opacity-50');
+        confirmBtn.classList.remove('hover:opacity-85');
+        confirmBtn.disabled = true;
+      }
+    });
+  </script>
+</section>
+
+<!-- =================================================================== -->
 <!-- 屏 7 · 尾页 · 致谢 -->
 <!-- =================================================================== -->
 <section id="s7" class="relative z-10 min-h-screen w-full flex flex-col items-center justify-center text-center px-8 py-20">
